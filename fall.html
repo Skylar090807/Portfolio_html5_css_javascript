@@ -1,0 +1,101 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fall</title>
+        <style>
+            body,html{margin: 0px 0px;}
+            #fall-header{
+                height: 150px;
+                margin: 0px auto;
+                background-image: url("image/fall6.jpg");
+                background-size: cover;
+                text-align: center;
+                padding-top: 150px;
+                font-size: 80px;
+                font-family: fantasy;
+                color: black;
+            }
+
+            #fall-nav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 60px auto;
+
+            }
+
+            #fall-nav div{
+                margin: 0px 20px;
+
+            }
+            #fall-nav img{
+                width: 100px;
+                height: 100px;
+
+            }
+            #fall-nav #fall-origin{
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+            }
+
+            @media screen and (max-width:768px) {
+                #fall-header{
+                    font-size: 50px;
+                }
+                #fall-nav{
+                    flex-direction: column;
+                }
+                #fall-nav{
+                    margin: 20px auto;
+                }
+                
+            }
+           
+        </style>
+
+        <script>
+            function change_img(i){
+                x=document.getElementById("fall-origin").src;
+                document.getElementById("fall-origin").src=document.getElementById(i).src;
+                document.getElementById(i).src=x;//맞바꾸기 swapping
+
+            }
+       
+        </script>
+    </head>
+    <body>
+        <header id=fall-header>
+            <a href="nav.html"><img src="image/icon3.png"></a>
+            Fall Story
+        </header>
+
+        <nav id="fall-nav">
+            <div>
+                <img id="fall-1" src="image/fall_1.jpg" onmouseover="change_img('fall-1')">
+            </div>
+
+            <div>
+                <img id="fall-2" src="image/fall_2.jpg" onmouseover="change_img('fall-1')">
+            </div>
+
+            <div>
+                <img id="fall-origin" src="image/fall_3.jpg">
+            </div>
+
+            <div>
+                <img id="fall-3" src="image/fall_4.jpg" onmouseover="change_img('fall-4')">
+            </div>
+
+            <div>
+                <img id="fall-4" src="image/fall_5.jpg" onmouseover="change_img('fall-5')">
+            </div>
+        </nav>
+
+
+        
+    </body>
+    </html>

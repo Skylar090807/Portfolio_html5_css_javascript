@@ -1,0 +1,93 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Winter</title>
+        <style>
+            body,html{margin: 0px 0px;}
+            #winter-header{
+                height: 150px;
+                margin: 0px auto;
+                background-image: url("image/christmas.jpg");
+                background-size: cover;
+                text-align: center;
+                padding-top: 150px;
+                font-size: 80px;
+                font-family: fantasy;
+                color: rgb(156, 10, 10);
+            }
+            #winter-section{
+                width: 450px;
+                height: 350px;
+                margin: 20px auto;
+                border: 1px solid rgb(17, 17, 17) ;
+                background-color: cornsilk;
+            }
+            #winter-section #witer1{
+                width: 400px;
+                height: 300px;
+                padding: 25px 25px;
+
+            }
+            @media screen and (max-width:768px) {
+                #winter-header{
+                    font-size: 50px;
+
+                }
+                
+            }
+
+          
+           
+        </style>
+
+        <script>
+            var count=0;
+            var t=new Array();
+            t[0]="image/winter_2.jpg";
+            t[1]="image/winter_3.jpg";
+            t[2]="image/winter_4.jpg";
+            t[3]="image/winter_5.jpg";
+            t[4]="image/winter_6.jpg";
+            t[5]="image/winter_7.jpg";
+            t[6]="image/winter_8.jpg";
+            t[7]="image/winter_9.jpg";
+            t[8]="image/winter_10.jpg";
+            t[9]="image/christmas1.jpg";
+            window.onload=start1;
+
+            function start1(){
+                setInterval("change_t()",1000);
+            }
+            function change_t(){
+                if(count<10){
+                    document.getElementById("winter1").src=t[count];
+                    count++;
+                    if(count>=10){
+                        count=0;
+                    }
+                }
+               
+            }
+           
+       
+        </script>
+    </head>
+    <body>
+        <header id=winter-header>
+            <a href="nav.html"><img src="image/icon3.png"></a>
+            Winter Story
+        </header>
+        <section id=winter-section>
+            <img id="winter1" src="image/winter_1.jpg">
+
+        </section>
+
+        
+
+
+        
+    </body>
+    </html>

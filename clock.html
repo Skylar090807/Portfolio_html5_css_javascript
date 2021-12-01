@@ -1,0 +1,89 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>clock</title>
+            <style>
+                #up{
+                    margin: 0px auto;
+                    color: gray;
+                    width: 600px;
+                    height: 100px;
+                    line-height:100px ;
+                    font-size: 30px;
+                    text-align: center;
+                }
+                #down{
+                    margin: 0px auto;
+                    color: gray;
+                    border: 1px solid #dedede;
+                    width: 800px;
+                    height: 250px;
+                    line-height: 250px;
+                    font-size: 100px;
+                    text-align: center;
+                }
+            </style>
+            <script>
+                var w=["일","월","화","수","목","금","토"];
+                var ap="AM";
+                var hour,min,sec;
+
+                function showclock(){
+                    var up=document.getElementById("up");
+                    var down=document.getElementById("down");
+                    var now=new Date();
+                    var year=now.getFullYear();
+                    var month=now.getMonth()+1;
+                    var day=now.getDate();
+                    var week=now.getDay();
+                    hour=now.getHours();
+                    min=now.getMinutes();
+                    sec=now.getSeconds();
+                    ampm();
+                    set();
+                    up.innerHTML=year+"년 "+month+"월 "+day+"일 "+w[week]+"요일";
+                    down.innerHTML=hour+" : "+min+" : "+sec+" "+ap;
+                    setTimeout("showclock()",1000);
+
+                }
+                function ampm(){
+                    if(hour>=0 &&hour<=9){
+                        hour="0"+hour;
+                        ap="AM";
+                    }
+                    else if(hour==12){
+                        ap="PM";
+                    }
+                    else if(hour>=13){
+                        hour=hour-12;
+                        hour=""+hour;
+                        ap="PM";
+                    }
+
+                }
+
+                function set(){
+                    if(min<10){
+                        min="0"+min;
+                    }
+                    if(sec<10){
+                        sec="0"+sec;
+                    }
+                }
+            </script>
+
+        </head>
+        <body onload="showclock()">
+            <div id=up>
+
+            </div>
+            <div id=down>
+
+            </div>
+            
+        </body>>
+
+        </html>

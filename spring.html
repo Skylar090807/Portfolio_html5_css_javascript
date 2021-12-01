@@ -1,0 +1,210 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>spring</title>
+        <style>
+            body,html{margin: 0px 0px;}
+            #spring-header{
+                height: 150px;
+                margin: 0px auto;
+                background-image: url("image/spring1.jpg");
+                background-size: cover;
+                text-align: center;
+                padding-top: 150px;
+                font-size: 80px;
+                font-family: fantasy;
+                color: black;
+            }
+
+            #spring-nav{
+                margin: 50px auto;
+                display: flex;
+                justify-content:center ;
+            }
+
+            #spring-nav img{
+                width:100px;
+                height:100px;
+                border-radius: 50%;
+            }
+
+            #spring-section{
+                width: 400px;
+                margin: 50px auto;
+            }
+
+            #spring-section img{
+                width:400px;
+                height: 300px;
+            }
+
+            #spring-msg{
+                width: 400px;
+                margin: 0px auto;
+                margin-bottom: 20px;
+            }
+
+            #spring-msg .spring-msg1{
+                list-style: none;
+                text-align: center;
+                color: rgb(92, 47, 14);
+                font-weight: bold;
+            }
+
+            #spring-msg .spring-msg1 p{
+                font-size: 20px;
+                color: rgb(3, 48, 3);
+            }
+
+            #spring-msg .spring-msg2{
+                text-align: justify;
+                padding: 0px 0px;
+                color: rgb(148, 80, 80);
+                font-size: 15px;
+            }
+
+            #spring-msg .spring-msg2 p{
+                text-align: center;
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            @media screen and (max-width:768px){
+                #spring-header{
+                    font-size: 60px;
+                }
+                #spring-nav{
+                    flex-wrap: wrap;
+                }
+                #spring-section{
+                    width: 300px;
+                    margin: 0px auto;
+                }
+                #spring-section img{
+                    width:300px;
+                    height: 300px;
+
+                }
+            }
+        </style>
+
+        <script>
+            function over(i){
+                document.getElementById("pic-spring").src=i;
+            }
+
+            function out(i){
+                document.getElementById("pic-spring").src=i;
+
+            }
+        </script>
+    </head>
+    <body>
+        <header id=spring-header>
+            <a href="nav.html"><img src="image/icon3.png"></a>
+            Spring Story
+        </header>
+
+        <nav id=spring-nav>
+            <div>
+                <img src="image/spring1.jpg" 
+                onmouseover="over('image/spring1.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>
+
+            <div>
+                <img src="image/spring_2.jpg" 
+                onmouseover="over('image/spring_2.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>
+            
+            <div>
+                <img src="image/spring_3.jpg" 
+                onmouseover="over('image/spring_3.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>
+            
+            <div>
+                <img src="image/spring_4.jpg" 
+                onmouseover="over('image/spring_4.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>
+            
+            <div>
+                <img src="image/spring_5.jpg" 
+                onmouseover="over('image/spring_5.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>
+            
+            <div>
+                <img src="image/spring_6.jpg" 
+                onmouseover="over('image/spring_6.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>
+            
+            <div>
+                <img src="image/spring_7.jpg" 
+                onmouseover="over('image/spring_7.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>
+            
+            <div>
+                <img src="image/spring_8.jpg" 
+                onmouseover="over('image/spring_8.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>
+            
+            <div>
+                <img src="image/spring_9.jpg" 
+                onmouseover="over('image/spring_9.jpg')" 
+                onmouseout="out('image/spring-s2.jpg')">
+            </div>
+            
+            <div>
+                <img src="image/spring_10.jpg" 
+                onmouseover="over('image/spring_10.jpg')" 
+                onmouseout="out('image/spring_1.jpg')">
+            </div>  
+        </nav>
+
+        <section id=spring-section>
+            <img id="pic-spring" src="image/spring_1.jpg">
+        </section>
+
+        <section id=spring-msg>
+            <ul class=spring-msg1>
+                <li><p>봄을 위하여</p></li>
+                <li>겨울만 되면</li>
+                <li>나는 언제나</li>
+                <li>봄을 기다리며 산다.</li>
+                <li>입춘도 지났으니</li>
+                <li>이젠 봄기운이 화사하다.</li>
+                <li>영국의 시인 바이런도</li>
+                <li>'겨울이 오면</li>
+                <li>봄이 멀지 않다'고 했는데</li>
+                <li>내가 어찌 이 말을 잊으랴?</li>            
+                <li>봄이 오면</li>
+                <li>생기가 돋아나고</li>
+                <li>기운이 찬다.</li>
+                <li>봄이여 빨리 오라.</li>
+            </ul>
+
+            <div class=spring-msg2>
+                <p>천상병·시인, 1930-1993</p>
+                대한민국의 문학인이자 시인. 
+                1930년 1월 29일 일본 효고현 히메지시(姫路市) 출신
+                호는 심온(深溫). 대표작은 "나 하늘로 돌아가리라"로
+                유명한 귀천. 문학계에서는 손꼽힐 정도로 대단한 
+                주당이자 기인으로 명성을 떨쳤다.특히 비슷하게 
+                문학계의 주당으로 이름을 드날렸던 시인 김관식과는
+                죽이 잘 맞았다고 한다.          
+                (그의 친구였던 신경림 시인의 회고록과 주변 
+                사람들의 증언을 통해 알 수 있다.)
+            </div>
+        </section>
+        
+    </body>
+    </html>

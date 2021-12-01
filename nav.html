@@ -1,0 +1,111 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>homepage</title>
+        <style>
+            body,html{margin: 0px 0px;}
+            #box{
+                height:150px;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(35,85,124);
+                font-size: 20px;
+                margin:0px auto;
+            }
+            #box a{
+                text-decoration: none;
+                color: white;
+            }
+
+            #box .logo{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+            }
+            #box .logo li{
+                padding:0px 15px;
+                font-family: fantasy;
+                font-size: 30px;
+            }
+
+            #box .menu{
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+            }
+            #box .menu li{
+                padding: 0px 15px;
+                font-size: 20px;
+            }
+            #box .menu li:hover{
+                background-color: peru;
+                border-radius: 20px;
+            }
+
+            #box .login{
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                align-items: center;
+            }
+            #box .login li{
+                padding: 0px 15px;
+            }
+
+            section{
+                height: 500px;
+                background-image: url("image/flower.jpg");
+                background-size: cover;
+                margin: 0px auto;
+            }
+
+            @media screen and (max-width:768px){
+                #box{
+                    flex-direction: column;
+                    height:"350px";
+                }
+                #box .menu{
+                    flex-direction: column;
+                }
+                
+            }
+
+        </style>
+        <script>
+            function popup(){
+                var win;
+                win=window.open("popup.html","win_popup","width=600px,height=700px");
+            }
+        </script>
+    </head>
+    <body onload="popup()">
+        <nav id=box>
+            <ul class=logo>
+                <li><a href="nav.html"><img src="image/icon3.png"></a></li>
+                <li><a href="nav.html">Season</a></li>
+            </ul>
+
+            <ul class=menu>
+                <li><a href="spring.html">Spring</a></li>
+                <li><a href="summer.html">Summer</a></li>
+                <li><a href="fall.html">Fall</a></li>
+                <li><a href="winter.html">Winter</a></li>
+            </ul>
+
+            <ul class=login>
+                <li><a href="map_1.html"><img src="image/icon17.png"></a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="javascript:popup()">popup</a></li>
+            </ul>
+        </nav>
+        <section>
+
+        </section>
+        
+    </body>
+    </html>

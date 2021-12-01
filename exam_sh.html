@@ -1,0 +1,282 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HansanSoju</title>
+        <style>
+            body,html{margin: 0px 0px;}
+            #log{
+                height:20px;
+                margin:0px auto;
+                text-align: right;
+                padding: 30px 50px;
+                font-size: 20px;
+                
+            }
+            #log a{
+                text-decoration: none;
+                color: black;
+            }
+
+            #title{
+                margin: 0px auto;
+                background-image: url("image/main_01.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 700px;
+
+            }
+
+            #title{
+                font-family: cursive;
+                text-align: center;
+                font-size: 80px;
+                line-height: 500px;
+            }
+
+            #menu{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 5px auto;
+                font-size: 25px;
+                font-family: cursive;
+                font-weight: 400;
+                background-color: peru;
+                padding:15px 0px;
+            }
+            #menu div{
+                padding: 0px 50px;
+            }
+            #menu div:hover{
+                background-color: rgb(117, 63, 12);
+                border-radius: 10px;
+
+            }
+            #menu a{
+                text-decoration: none;
+                color: black;
+            }
+
+            #pay{
+                margin: 150px auto;
+                display: flex;
+                justify-content: center;
+
+            }
+            #pay> div{
+                margin: 0px 100px;
+
+            }
+
+            #title1{
+                text-align: center;
+                font-size: 25px;
+                margin: 40px auto;
+            }
+
+            #product{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+            }
+
+            #title2{
+                margin: 100px auto;
+
+            }
+            #title2 img{
+                width: 100%;
+
+            }
+
+            #title3{
+                margin: 150px auto;
+                text-align: center;
+            }
+            #title3 p{
+                font-size: 30px;
+                font-family: sans-serif;
+            }
+            #title3 a{
+                text-decoration: none;
+                color: black;
+
+            }
+
+            #menu1{
+                margin: 100px auto;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            #title4 img{
+                width: 100%;
+            }
+
+            #end img{
+                width: 100%;
+            }
+
+            @media screen and (max-width: 768px){
+                #title{
+                    height: 250px;
+                    font-size: 30px;
+                    line-height: 100px;
+                }
+                #menu{
+                flex-direction: column;
+                text-align: center;
+                font-size: 20px;
+                margin: 30px 30px;
+            }
+                #menu div{
+                padding: 10px 10px;
+                }
+
+                #pay{
+                    margin: 30px 0px;
+                    flex-direction: column;
+                }
+
+                #pay div{
+                    margin: 10px 0px;
+                    text-align: center;
+                }
+
+                #pay div img{
+                    width: 300px;
+                    height: 100px;
+                }
+
+                #product{
+                    flex-direction: column;
+                }
+
+                #menu1{
+                    flex-direction: column;
+                    padding: 30px 0px;
+                    align-items: center;
+                }
+            }
+
+            
+
+
+            
+            
+            
+           
+
+        </style>
+        <script>
+            var count=0;
+                window.onload=start1;
+                function start1(){
+                    setInterval("change_t()",2000);
+                }
+                function change_t(){
+                    if(count%2==0)
+                       document.getElementById("title").style.backgroundImage="url(image/main_01.jpg)";
+                    else  
+                    document.getElementById("title").style.backgroundImage= "url(image/main_16.png)";
+                  count++;  
+                }
+           
+            
+            
+        </script>
+    </head>
+    <body>
+        <nav id=log>
+            <a href="#">로그인</a>&nbsp;&nbsp;&nbsp; 
+            <a href="#">회원가입</a>    
+        </nav>
+
+        <header id=title>
+            한산소곡주
+
+        </header>
+        
+        <section id="menu">
+            <div><a href="#">회사 소개</a></div>
+            <div><a href="#">제품 구매</a></div>
+            <div><a href="#">지자체관광마케팅</a></div>
+            <div><a href="#">정미란 식단(음식)연구소</a></div>
+
+
+        </section>
+
+        <section id="pay">
+            <div><a href="#"><img src="image/main_03.gif"></a></div>
+            <div><a href="#"><img src="image/main_02.gif"></a></div>
+        </section>
+
+        <header id="title1">
+            BEST PRODUCT
+        </header>
+
+        <section id="product">
+            <div>
+                <a href="#"><img src="image/main_04.gif"></a><br>
+                한산소곡주 1,800ml<br>
+                22,000원<br>
+                <img src="image/main_07.gif">
+            </div>
+            <div>
+                <a href="#"><img src="image/main_05.gif"></a><br>
+                한산소곡화주 고급형 480ml<br>
+                45,000원<br>
+                <img src="image/main_07.gif">
+            </div>
+            <div>
+                <a href="#"><img src="image/main_06.gif"></a><br>
+                한산소곡화주 세트 1,800ml<br>
+                30,000원<br>
+                <img src="image/main_07.gif">
+            </div>
+
+        </section>
+
+        <section id="title2">
+            <img src="image/main_08.gif">
+        </section>
+
+        <section id="title3">
+            <p>IMAGE CUT</p>
+            <a href="#">창가의 한산곡주 이용 고객들의 진솔한 후기입니다.</a>
+        </section>
+
+        <section id="menu1">
+            <div>
+                <a href="#"><img src="image/main_10.gif"></a>
+            </div>
+            <div>
+                <a href="#"><img src="image/main_11.gif"></a>
+            </div>
+            <div>
+                <a href="#"><img src="image/main_12.gif"></a>
+            </div>
+            <div>
+                <a href="#"><img src="image/main_13.gif"></a>
+            </div>
+
+        </section>
+
+        <section id="title4">
+            <img src="image/main_14.gif">
+
+        </section>
+
+        <footer id="end">
+            <img src="image/main_15.jpg">
+
+        </footer>
+        
+    </body>
+    </html>
