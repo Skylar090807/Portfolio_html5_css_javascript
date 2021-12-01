@@ -1,0 +1,118 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script>
+            function k1(){
+                var score,grade;
+                score=prompt("점수를 입력하세요","100");
+                score=parseInt(score);
+                if(score>=90){
+                   grade="A";
+                }
+                else if(score>=80){
+                   grade="B";
+                }
+                else if(score>=70){
+                  grade="C";
+                }
+                else if(score>=60){
+                  grade="D";
+                }
+                else{
+                  grade="F";
+                }
+                document.write("grade="+grade+"등급입니다<br>");
+            }
+
+            function k2(){
+                var num;
+                num=prompt("정수값 입력하세요","33");
+                num=parseInt(num);
+                if(num%2 == 0){
+                    document.write("짝수입니다<br>");                    
+                }
+                else{
+                    document.write("홀수입니다<br>");
+                }
+            }
+
+            function k3(){
+                var fruit="사과";
+                var price;
+                switch(fruit){
+                    case "바나나":
+                        price=3000;
+                        break;
+                    case "체리":  
+                        price=5000;
+                        break;
+                    case "사과":
+                        price=1000;
+                        break;
+                    default:
+                        price=0;
+                        break;                        
+                }
+                document.write("price="+price+"<br>");
+            }
+
+            function k4(){
+                var day="토";
+                switch(day){
+                    case "월":
+                    case "화":   
+                    case "수":
+                    case "목":
+                    case "금":
+                        document.write("정상영업<br>") ;
+                        break;
+                    case "토":
+                    case "일":
+                        document.write("휴일<br>");
+                        break;
+                }
+            } 
+            function k5(){
+                var coffee,price=0;
+                coffee=prompt("무슨 커피를 준비할까요","coffee");
+                switch(coffee){
+                    case "espresso":
+                    case "에스프레소":
+                        price=2000;
+                        break; 
+                    case "cappuccino":
+                    case "카푸치노":
+                        price=3000;
+                        break;   
+                    case "caffelatte":
+                    case "까페라떼":
+                        price=3500;
+                        break;  
+                    default:
+                        document.write(coffee+"는 없습니다"); 
+                        break;        
+                }
+                if(price!=0){
+                    document.write(coffee+"는 "+price+"원입니다");
+                }
+            }      
+
+        </script>
+    </head>
+    <body>
+        <script>
+            k1();
+            k2();
+            k3();
+            k4();
+            //espresso(에스프레소)-2000 , 
+            //cappuccino(카푸치노)-3000 , caffelatte(까페라떼)-3500
+            //ex)에스프레소(espresso)는 2000원입니다
+            k5();
+        </script>
+    </body>
+    </html>

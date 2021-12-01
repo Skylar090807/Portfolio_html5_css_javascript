@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN-하기</title>
+    <style>
+         #section{
+           width:500px;
+           height:500px;
+           border:1px solid red;
+            margin:50px auto;
+            text-align:center;   
+         }
+      /* .log1, .log2 , .log3, .log4, .log5*/ul{
+           list-style:none;   
+           padding:20px;
+        }
+   /*   .log2 input, .log3 input,  .log4 */ul input{
+         width:200px;
+         height:30px;
+         text-align:center;         
+       }
+   .log5{
+             display:flex;
+             justify-content: center;
+           }
+  .log5 li{
+              padding:0px 20px;
+           }
+ .log5 a{
+            text-decoration:none;
+          }
+    </style>
+</head>
+<body>
+    <section id="section">
+     <form method="get">
+            <ul class=log1 >
+                <li><b>Season을 방문해 주셔서 감사합니다</b></li>
+            </ul>
+            <ul class=log2>
+                <li>아이디</li>
+                <li><input type=text name="id" value=season></li>
+            </ul>
+            <ul class=log3>
+                <li>패스워드</li>
+                <li><input type=password name="pass" value="season"></li>
+            </ul>
+            <ul class=log4>
+                <li><input type="submit" value="전송하기"></li>
+            </ul>
+
+          <ul class=log5>
+            <li><a href="javascript:member()">회원가입</a></li>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비빌번호 찾기</a></li>
+        </ul>   
+    </form>
+ </section>
+
+    
+</body>
+</html>

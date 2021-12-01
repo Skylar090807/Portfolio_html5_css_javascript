@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript.13</title>
+    <script>
+        function change(){
+            var span=document.getElementById("myspan");
+            span.style.color="green";
+            span.style.fontSize="30px";
+            span.style.display="block";
+            span.style.width="6em";//em은 배, 6em은 6배
+            span.style.border="5px solid peru";
+            span.style.margin="20px";
+
+        }
+        
+    </script>
+</head>
+<body>
+    <h3>HTML DOM(document object model) 트리</h3>
+    <hr>
+    <h3>DOM(document object model)객체 p의 프로퍼티, 스타일, 이벤트 리스너</h3>
+    <p id=firstp style="color: peru;" onclick="this.style.color='gray'">
+        이것은 <span id=myspan style="color: rgb(24, 24, 102);">문장입니다.</span>
+    </p>
+    <input type="button" value="스타일 변경" onclick="change()">
+    <hr>
+    <script>
+        var p=document.getElementById("firstp");//firstp를 쓰는 <p>태그를 부름
+        document.write("p= "+p+"<br>");
+        document.write("p.id= "+(p.id)+"<br>");
+        document.write("p.tagName= "+(p.tagName)+"<br>");
+        document.write("p.innerHTML= "+(p.innerHTML)+"<br>");//innerHTML p에 있는 내용.
+        document.write("p.style.color= "+(p.style.color)+"<br>");
+        document.write("p.onclick= "+(p.onclick)+"<br>");
+        document.write("p.childElementCount= "+(p.childElementCount)+"<br>");
+        document.write("p.offsetWidth(너비)= "+(p.offsetWidth)+"<br>");
+        document.write("p.offsetHeight(높이)"+(p.offsetHeight)+"<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script>
+            function change(){
+                var s=document.getElementsByTagName("span");
+                for(var i=0; i<s.length; i++){
+                    s[0].style.color="red";
+                    s[0].style.fontSize="20px";
+                    s[1].style.color="brown";
+                    s[1].style.fontSize="30px";
+                    s[2].style.color="blue";
+                    s[2].style.fontSize="40px";
+                    s[3].style.color="pink";
+                    s[3].style.fontSize="50px";
+
+                }
+                
+            }
+
+            /*선생님이 짠 것
+            function change(){
+                var s=document.getElementsByTagName("span");
+                var color=["red","brown","blue","pink"];
+                var size=["20px","30px","40px","50px"];
+                for(var i=0; i<s.length; i++){
+                    s[i].style.color=color[i];
+                    s[i].style.fontSize=size[i];
+
+                
+            }*/
+           
+    
+
+        </script>
+    </head>
+    <body>
+        <h3>내가 좋아하는 과일&nbsp;&nbsp;&nbsp;
+        <button onclick="change()">Click me</button>
+        </h3>
+        <hr>
+        저는 빨간 <span>사과</span>를 좋아해서
+        아침마다 한 개씩 먹고 있어요. 운동할 때는 중간 중간에
+        <span>바나나</span>를 먹지요. 탄수화물 섭취가
+        힘이 납니다. 또한 달콤한 향기를 품은 <span>체리</span>와
+        여름 냄새 물씬 나는 <span>자두</span>를 좋아합니다.
+        
+    </body>
+    </html>

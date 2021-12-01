@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function over(obj){
+            obj.src="image/banana.png";
+        }
+        function out(obj){
+            obj.src="image/apple.png";
+        }
+    </script>
+</head>
+<body>
+    <h3>Javascript 문법</h3>
+    <hr>
+    <p>1.이벤트 리스너 속성 자바스크립트 코드</p>
+    <hr>
+    <h3>마우스를 클릭하세요.</h3>
+    <hr>
+    <img src="image/apple.png" onclick="this.src='image/banana.png'">
+    <hr>
+    <p>2.&lt;script&gt; 태그에 자바스크립트 작성</p>
+    <h3>마우스를 올려 보세요.</h3>
+    <img src="image/apple.png" onmouseover="over(this)" 
+                               onmouseout="out(this)">
+</body>
+</html>

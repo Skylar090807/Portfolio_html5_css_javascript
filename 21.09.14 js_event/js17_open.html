@@ -1,0 +1,39 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script>
+            function change(){
+                var win=null;
+                if(win==null || win.closed){
+                    win=window.open(""/*뿌릴내용*/,"outwin"/*창의 이름*/,"width=300px,height=200px"/*사이즈*/);
+
+
+                }
+                var text=document.getElementById("srctext");
+                win.document.open();
+                win.document.write(text.value);
+                win.document.closed();
+            }
+            
+    
+
+        </script>
+    </head>
+    <body>
+        <h3>HTML 문서 작성기 만들기</h3>
+        <hr>
+        <p>
+            아래에 HTML 문서를 작성하고 버튼을 클릭해보세요.<br>
+            새 윈도우에 HTML 문서가 출력됩니다.
+        </p>
+        <textarea id=srctext rows="10" cols="50">
+
+        </textarea><br><br>
+        <button onclick="change()">HTML 문서 출력</button>
+        
+    </body>
+    </html>

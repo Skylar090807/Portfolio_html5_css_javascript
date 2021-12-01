@@ -1,0 +1,116 @@
+<html lang="ko">
+ 
+<head>
+   <meta charset="UTF-8">
+  <title>pizza</title>
+ </head>
+
+ <body>
+   <h3>피자 주문하기</h3>
+   <form method="get">
+
+     <fieldset>
+      <legend>고객정보</legend>
+         <table border="1" align="center" width=600 height=150>
+
+          <tr>
+            <th style="background-color:#ccffff">고객 이름</th>
+            <th><input type="text" name="name" value="hong" style="background-color:#ffff99"></th>
+          </tr>
+
+          <tr>
+             <th style="background-color:#99ffff">전화 번호</th>
+             <th><input type="tel" name="tel" value="010-" style="background-color:#ffff55"></th>
+          </tr>
+
+          <tr>
+             <th style="background-color:#33ffff">메일 주소</th>
+             <th><input type="email" name="email" value="id@naver.com" style="background-color:#ffff33"></th>
+           </tr>
+
+         </table>
+     </fieldset><br><br>
+      
+     <fieldset>
+       <legend>피자 종류</legend>
+       <table border="1" align="center" width=600>
+       
+       <tbody align=center>
+          <tr>
+          <th><label>
+     <input type="radio" name="p1" value="갈릭불고기">
+      <img src="image/p1.png" width=120></label></th>
+          <th><label>
+     <input type="radio" name="p2" value="크랩 쉬림프">
+      <img src="image/p2.png" width=120></label></th>
+          <th><label>
+     <input type="radio" name="p2" value="포테이토 소시지">
+      <img src="image/p3.png" width=120></label></th>
+          <th><label>
+     <input type="radio" name="p2" value="치즈 치즈">
+      <img src="image/p4.png" width=120></label></th>
+         </tr>
+       </tbody>
+       </table>
+     </fieldset><br><br>
+
+
+     <fieldset>
+       <legend>피자 크기</legend>
+       <table border="1" align="center" width=600 height=50>
+         <tr>
+          <td align=center>
+                 <label><input type="radio" name="pizza" value="small">Small</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <label><input type="radio" name="pizza" value="medium">Medium</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <input type="radio" name="pizza" value="large">Large</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <input type="radio" name="pizza" value="super big">Super big</label>
+          </td>
+          </tr>
+       </table>
+     </fieldset><br><br>
+
+     <fieldset>
+       <legend>원하는 토핑 고르기</legend>
+       <table border="1" align="center" width=600 height=50>
+          <tr>
+          <td align=center>
+                 <label><input type="checkbox" name="pizza" value="bacon">베이컨</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <label><input type="checkbox" name="pizza" value="cheese">치즈</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <label><input type="checkbox" name="pizza" value="onion">양파</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <label><input type="checkbox" name="pizza" value="mushroom">버섯</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <label><input type="checkbox" name="pizza" value="shirimp">새우</label>
+          </td>
+          </tr>
+       </table>
+     </fieldset><br><br>
+
+
+     <fieldset>
+       <legend>원하는 배달 시간</legend>
+       <table border="1" align="center" width=600 height=50>
+          <tr>
+          <th><input type="time" name="time" value=""></th>
+          </tr>
+       </table>
+     </fieldset><br><br>
+
+
+     <fieldset>
+       <legend>배달 요구 사항</legend>
+       <table border=0 align="center">
+          <th><textarea cols=80 row=4 name="mesege">메시지 남겨주세요
+    </textarea></th>
+       </table>
+     </fieldset><br><br>
+
+
+
+
+
+
+      <table align=center>
+        <td><button style="background-color:black; color:white">피자주문하기</button></td>
+      </table>
+   </form>
+ </body>
+</html>

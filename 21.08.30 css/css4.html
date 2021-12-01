@@ -1,0 +1,49 @@
+<!--html 주석처리 -->
+<html lang="ko">
+ <head>
+   <meta charset="UTF-8">
+  <title>속성에 스타일 만들기</title>
+  <style type="text/css">
+      /*<link href="mystyle.css" type="text/css" rel="stylesheet">*/
+      @import url(css4.css);
+      
+   p{
+       color:magenta;
+       font-size:20px;
+     }
+
+   div{
+        color:blue;
+        font-size:12px;
+
+       }
+  </style>
+ </head>
+ 
+<body>
+  <h3 style="text-align:center">손 흥민</h3>
+  <hr style="border:brown solid 3px">
+  <p style="color:#ffff00">오페라를 좋아하고</p>
+  <P style="background-color:#1011ff">엘비스 프레슬리를 좋아하고</P>
+  <P style="color:#00ffff">김치 부침개를 좋아하고</P>
+  <P style="color:#aabbcc"><span style="background-color:#ca1a9a">축구</span>를 좋아한다</P>
+  <hr>
+  <h3>b태그, em 태그가 부모 p 태그의 스타일 상속 받는다</h3>
+  <hr>
+  <p>
+     자식 태그는 부모의 스타일을 <b style="font-size:25px; color:red">상속</b> 받는다<br>
+     자식 태그는 부모의 스타일을 <em style="font-size:30px; color:blue;">상속</em>받는다<br>
+     자식 태그는 부모의 스타일을 <b style="font-size:25px; color:orange; background-color:#ca1a9a;">상속</b> 받는다<br>
+     자식 태그는 부모의 스타일을 <em style="font-size:30px; color:pink;">상속</em>받는다<br>
+ </p>
+ 
+    <hr>
+      <h3>div 태그에 중첩된 스타일</h3>
+        <div>Hello, students!</div>
+        <div style="font-size:30px">안녕하세요 교수님!</div>
+        <div></div>
+</body>
+
+
+
+</html>

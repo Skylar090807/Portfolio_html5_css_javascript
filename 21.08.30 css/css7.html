@@ -1,0 +1,45 @@
+<!--html 주석처리 -->
+<html lang="ko">
+ <head>
+   <meta charset="UTF-8">
+  <title>자식 셀렉터와 자손 셀렉터</title>
+  <style type="text/css">
+      /*<link href="mystyle.css" type="text/css" rel="stylesheet">
+      @import url(css4.css);*/
+      
+    ul strong{
+                color:green;/*자손*/
+               }
+
+    div>strong{
+                  background-color:yellow;/*자식*/
+                  }
+    .warning{
+
+              color:red;
+              }
+  </style>
+ </head>
+ 
+<body>
+  <h3 style="">web programming</h3>
+
+  <hr>
+
+<div>
+
+  <div><strong>2학기 학습 내용</strong></div>
+
+  <ul>
+    <li>HTML5</li>
+    <li><strong>CSS</strong></li>
+    <li>JAVASCRIPT</li>
+  </ul>
+  <div class="warning">60점 이하는 F!!!!!!!!!</div>
+</div>
+
+</body>
+
+
+
+</html>

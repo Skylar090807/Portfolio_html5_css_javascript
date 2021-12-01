@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script>
+            var width=1;
+            function down(obj){
+                obj.style.fontStyle="italic"
+
+            }
+            function up(obj){
+                obj.style.fontStyle="normal"
+
+            }
+            function over(obj){
+                obj.style.borderStyle="ridge";
+                obj.style.borderWidth="20px";
+                obj.style.borderColor="gray";
+                obj.style.fontSize="30px";
+
+            }
+            function out(obj){
+                obj.style.borderStyle="ridge";
+                obj.style.borderWidth="20px";
+                obj.style.borderColor="lightgray";
+                obj.style.fontSize="20px";
+
+            }
+        
+            
+            
+            
+    
+
+        </script>
+    </head>
+    <body >
+        <h3>마우스 관련 이벤트 리스너</h3>
+        <hr>
+        <div>마우스 관련
+            <span
+                onmousedown="down(this)"
+                onmouseup="up(this)"
+                onmouseover="over(this)"
+                onmouseout="out(this)">
+                이벤트</span>가 발생합니다.
+            
+
+        </div>
+        
+        
+        
+        
+    </body>
+    </html>

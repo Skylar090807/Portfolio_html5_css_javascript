@@ -1,0 +1,22 @@
+<html lang="ko">
+ <head>
+   <meta charset="UTF-8">
+  <title>form-tag</title>
+ </head>
+ <body>
+  <!-- action(서버 xx.php xx.jsp) method(get노출, post비노출)-->
+  <h3>자기 소개서 작성</h3>
+  <hr>
+
+  <form method="get">
+    이름:<input type="text" name="n1" value="홍길동"><br><br>
+    암호:<input type="password" name="pass" value="1234" maxlength="10"><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자소서<br>
+    <textarea cols=50 row=10 name="t">
+이곳에 자기소개서 작성
+    </textarea><br><br>
+    <button type="submit">전송하기</button>
+  </form>
+   
+ </body>
+</html>

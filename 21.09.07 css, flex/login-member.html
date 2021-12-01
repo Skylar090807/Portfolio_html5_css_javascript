@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <style>
+          body,html{
+            margin: 0px 0px;
+        }
+        #member{      
+            width: 300px;      
+            margin: 0px auto;  
+            text-align:center;       
+        }
+        #member ul{
+            list-style: none;   
+            padding:10px 0px;
+         }
+      #member ul input{
+            width:200px;
+            height:40px;
+            text-align: center;
+            background-color: rgb(247, 226, 247);
+            border: 0px double red;
+        }
+       
+    </style>   
+</head>
+<body>
+ <section id="member">
+    <form method="get">
+            <ul>
+                <li class=mem1>회원가입하기</li>
+            </ul>
+
+            <ul>
+                <li>이름</li>
+                <li><input type=text name="name" value="이름입력"></li>
+            </ul>
+
+            <ul>
+                <li>아이디</li>
+                <li><input type=text name="id" value="아이디입력"></li>
+            </ul>
+
+            <ul>
+                <li>패스워드</li>
+                <li><input type=password name="pass" value="암호입력"></li>
+            </ul>
+
+            <ul>
+                <li>생년월일</li>
+                <li><input type=date name="date" value="년/월/일"></li>
+            </ul>
+
+            <ul>
+                <li>이메일</li>
+                <li><input type=email name="email" value="id@host"></li>
+            </ul>
+
+            <ul>
+                <li>홈페이지</li>
+                <li><input type=url name="url" value="http://www."></li>
+            </ul>
+
+            <ul>
+                <li>자기소개</li>
+                <li><textarea rows=3 cols=30>저는...
+
+                </textarea></li>
+            </ul>
+            <ul>
+                <li><button type="submit">전송하기</button></li>
+            </ul>
+      </form> 
+  </section>
+</body>
+</html>

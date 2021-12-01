@@ -1,0 +1,51 @@
+<html lang="ko">
+  <head><title>css의 기본 틀</title>
+      <meta charset="UTF-8">
+      <style type="text/css">
+       #box{
+           width:800px;
+           height:600px;
+           border:1px solid black;
+        }
+      #box{
+                display:flex;
+                /*flex-wrap:no-wrap;,wrap */
+                /*flex-direction:column-reverse;,row,row-reverse,column*/
+                justify-content:space-around;/*center space-between*/
+                align-items:center;/*flex-start  flex-end*/
+              }
+ 
+       #box div{
+          width:70px;
+          height:50px;
+          border:2px solid blue; 
+
+        }
+  
+       #box .box1{
+            background-color:yellow;
+       }
+
+       #box .box2{
+            background-color:green;
+       }
+
+       #box .box3{
+            background-color:brown;
+       }
+
+       #box .box4{
+            background-color:red;
+       }
+      
+      </style>
+  </head>
+  <body>
+    <div id=box>
+         <div class=box1>spring</div>
+         <div class=box2>summer</div>
+         <div class=box3>fall</div>
+         <div class=box4>winter</div>
+    </div>
+  </body>
+</html>

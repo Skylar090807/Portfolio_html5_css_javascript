@@ -1,0 +1,129 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script>
+            function k1(){
+                var n,i,sum=0;
+                n=prompt("0보다 큰 값을 입력하세요","100");
+                n=parseInt(n);//문자 n이 숫자로 바뀜
+                for(i=0; i<=n; i++){
+                    sum=sum+i;
+                }
+                document.write("0부터"+n+"까지의 합="+sum+"입니다.<br><hr>");
+            }
+
+            function k2(){
+                var n,i,sum=0;
+                i=0;
+                n=prompt("정수값 입력하세요","10")
+                parseInt(n);
+                while(i<=n){
+                    sum=sum+1;
+                    i++;
+
+
+                }
+                document.write(n+"까지의 합="+sum+"<hr>")
+            }
+
+            function k3(){ //sum=3000 이상이면 끝내기.
+                var i, sum;
+                i=0, sum=0;
+                while(true){ //true일 때 무한루프
+                    sum=sum+i;
+                    if(sum>=3000){
+                        document.write("i="+i+", sum="+sum+"<hr>");
+                        break; //break로 빠져나옴
+                    }
+                    else{
+                        i++;
+                    }
+                    
+
+                }
+            }
+
+            function k4(){ //0~100 중 5의 배수만 합하기 1씩 증가.
+                var i, sum=0;
+                for(i=0; i<=100; i++){
+                    if(i%5!=0){
+                        continue;
+
+                    }
+                    else{
+                        document.write(i+" ");
+                        sum=sum+i;
+
+                    }
+                }
+                document.write("<br>5의 배수의 합은"+sum+"입니다.<hr>");
+            }
+
+            /* 내가짠 것 
+            function k5(){ //0~3000 중 5의 배수만 합하기 1씩 증가.
+                var i=0, sum=0
+                for(i=0; i<=3000; i++){
+                    if(i%5!=0){
+                        continue;
+                    }
+                    else if(i<=3000){
+                        break;
+                    /
+                    else{
+                        document.write(i+" ");
+                        sum=sum+i;
+                       
+
+
+
+
+                    }
+                }
+                document.write("<br>5의 배수의 합은"+sum+"입니다.<hr>");
+
+            }*/
+
+            function k5(){ 
+                var i,sum;
+                i=0, sum=0;
+                while(true){
+                    i++;
+                    if(i%5!=0){
+                        continue;
+                    }
+                    else{
+                        sum=sum+i;
+                        if(sum>=3000){
+                            document.write("i="+i+", sum="+sum+"<br>");
+                            break;
+                        }
+                    }
+                }
+            }
+           
+   
+        </script>
+    </head>
+    <body>
+        <h3></h3>
+        
+        <script>
+            document.write("<h3>반복문 n까지 합 구하기</h3><hr>");
+            k1();
+            k2();
+            document.write("<h3>무한 반복문에서 빠져나오기  break문</h3>");
+            k3();
+            document.write("<h3>continue문</h3><hr>");
+            k4();
+            document.write("<h3>continue, break</h3>");
+            k5();
+
+            
+        </script>
+      
+    </body>
+    </html>

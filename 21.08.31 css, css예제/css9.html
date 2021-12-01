@@ -1,0 +1,78 @@
+<!--html 주석처리 -->
+<html lang="ko">
+ <head>
+   <meta charset="UTF-8">
+  <title>가상 클래스(pseudo-class) 셀렉터</title>
+  <style type="text/css">
+      /*<link href="mystyle.css" type="text/css" rel="stylesheet">
+      @import url(css4.css);*/
+   /* :(콜론)은 상황, hover 커서 가져다 댔을 때, active 실행 시켰을 때*/   
+  a:hover{background-color:orange;}
+  a:active{color:brown;}
+  a:visited{color:green}
+  a:link{color:yellow;}
+  
+  /*텍스트 박스 안에 들어가서 클릭할 때 텍스트 색상 바뀜*/
+  input:focus{color:red; background-color:yellow;}
+
+  p:first-line{color:blue;}
+
+  h3:first-letter{color:red}
+  /*tr줄, nth n번째, child 자손, even 짝수, odd 홀수*/
+  tr:nth-child(even){background-color:skyblue;}
+  tr:nth-child(1){background-color:red;}
+  </style>
+ </head>
+ 
+<body>
+  <h3>가상 클래스(pseudo-class) 셀렉터</h3>
+
+  <hr>
+  어떤 조건이나 상황에서 스타일을 적용하도록 만든 세렉터<br>
+  40개 이상의 많은 가상 클래스 셀렉터가 있다<br>
+  <hr>
+  <a href="http://www.dreamwiz.com">드림위즈</a><br>
+ <hr>
+ 과일:<input type="text" value="apple">
+ <hr>
+ <p>
+ 어떤 조건이나 상황에서 스타일을 적용하도록 만든 셀렉터<br>
+ 40개 이상의 많은 가상 클래스 셀렉터 있음<br>
+ </p>
+
+ <hr>
+    <h3>table 만들기</h3>
+ <hr>
+    <table border=2 align=center width=400 height=200>
+      <caption>table</caption>
+      <tr><!-- 줄 -->
+          <td>1</td> <!-- 칸 -->
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+      </tr>
+      <tr>
+         <td>5</td>
+         <td>6</td>
+         <td>7</td>
+         <td>8</td>
+      </tr>
+     <tr>
+         <td>9</td>
+         <td>10</td>
+         <td>11</td>
+         <td>12</td>
+      </tr>
+     <tr>
+         <td>13</td>
+         <td>14</td>
+         <td>15</td>
+         <td>16</td>
+      </tr>
+    </table>
+
+</body>
+
+
+
+</html>

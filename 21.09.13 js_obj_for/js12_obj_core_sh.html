@@ -1,0 +1,146 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script>
+            function k1_date(){
+                var now;
+                now=new Date();
+                document.write(now.getFullYear()+"Year.<br>");
+                document.write(now.getMonth()+1+"Month.<br>");//+1을 해야 현재 월이 뜸
+                document.write(now.getDate()+"date.<br>");
+                document.write(now.getHours()+"Hours.<br>");
+                document.write(now.getMinutes()+"Munutes.<br>");
+                document.write(now.getSeconds()+"Seconds.<br>");
+                document.write(now.getMilliseconds()+"Milliseconds.<br><hr>");
+            }
+
+            function k1_background(){
+                var now=new Date();
+                var x=now.toLocaleString();
+                document.write("현재시간: "+x+"<hr>");
+                var t=now.getSeconds();
+                var t1=t%5; //0,1,2
+                if(t1==0){
+                    document.body.style.backgroundColor="violet";
+
+                }
+                else if(t1==1){
+                    document.body.style.backgroundColor="lightskyblue";
+                }
+                else if(t1==2){
+                    document.body.style.backgroundColor="pink";
+                }
+                else if(t1==3){
+                    document.body.style.backgroundColor="peru";
+                }
+                else{
+                    document.body.style.backgroundColor="gray";
+
+                }
+            }
+
+            function k2_string(){
+                var a=new String("Girls and Girls");
+                var b="!!";
+                document.write("a의 내용: "+a+"<br>");
+                document.write("a의 길이: "+a.length+"<br>");
+                document.write(a.charAt(0)+"<br>");//해당 번호 문자
+                document.write(a.concat(b)+"<br>");//문장 결합
+                document.write(a.indexOf("s")+"<br>");//인덱스 번호
+                document.write(a.indexOf("and")+"<br>");
+                document.write(a.slice(5,8)+"<br>");
+                document.write(a.substr(5,3)+"<br>");
+                document.write(a.toUpperCase()+"<br>");//대문자
+                document.write(a.replace("and","or")+"<br>");//교체
+                document.write("    hong    ".trim()+"<br><hr>");//스페이스 지우고 출력
+                var sub=a.split(" ");//괄호의 내용으로 구분하라
+                document.write("a를 빈칸으로 구분.<br>");
+                document.write("sub.legth= "+sub.length+"<br>");
+                for(var i=0; i<sub.length; i++){
+                    document.write("sub"+i+"="+sub[i]+"<br>");//빈칸으로 구분된 세 개의 덩어리를 순서대로 출력     
+
+                }
+
+
+            }
+
+            function k3_array(){
+                document.write("<p>배열 만드는 방법: [ ]로 만들기, Array( ) 객체로 만들기</p>");
+                var x=[20,5,8,15,20];//x=[0],[1]...[4]로 부른다.
+                var i, size;
+                for(i=0; i<5; i++){//반복문 안에 반복문
+                    size=x[i];
+                    while(size>0){
+                        document.write("*");
+                        size--;
+                    }
+                    document.write(x[i]+"<br>");
+
+                }
+                document.write("<hr>");
+            }
+
+            function k3_array_obj(){
+                var a=new Array("황","김","이");
+                var b=new Array("박");
+                var c;
+                c=a.concat(b);
+                document.write("c= "+c+"<br>");
+                c=a.join("##");
+                document.write("c= "+c+"<br>");
+                c=a.reverse();
+                document.write("c= "+c+"<br>");
+                c=a.slice(1,2);//2는 포함 안 됨
+                document.write("c= "+c+"<br>");
+                c=a.sort();
+                document.write("c= "+c+"<hr>");
+
+            }
+
+            function k4_math(){
+                var m;
+                m=Math.random();//0에서 1사이의 소수점 값이 랜덤하게 나옴.
+                document.write("m= "+m+"<br>");
+                m=m*100;
+                document.write("m= "+m+"<br>");
+                m=Math.floor(m);//소수점 아래 제거.
+                document.write("m= "+m+"<br>");
+
+            }
+
+            
+
+            
+           
+   
+        </script>
+    </head>
+    <body>
+        <h3>core 객체 Date(), Array(), String(), Math()</h3>
+        <p>자바스크립트 언어가 실행되는 어디서나 사용 가능한 기본 객체</p>
+        <hr>
+
+        
+        <script>
+            document.write("<h3>Date() 객체</h3>");
+            k1_date();
+            k1_background();
+            document.write("<h3>String() 객체</h3>");
+            k2_string();
+            document.write("<h3>Array() 객체</h3>");
+            k3_array();
+            k3_array_obj();
+            document.write("<h3>Math() 객체</h3>");
+            k4_math();
+            
+            
+
+            
+        </script>
+      
+    </body>
+    </html>

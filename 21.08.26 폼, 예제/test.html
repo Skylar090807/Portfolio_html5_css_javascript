@@ -1,0 +1,76 @@
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <title>html-복습하기</title>
+  </head>
+  <body>
+    <h3>나의 일상</h3>
+    <hr>
+    <table border=1 align="center" width=500 >
+       <caption style="color:red"><b>나의 일상</b></caption>
+       <thead aligb="center" style="background-color:orange" height=50>
+         <tr>
+            <th width=200>제목</th>
+            <th>내용</th>
+        </tr>
+      </thead>
+      <tbody align="center" height=600>
+         <tr>
+            <td>좋아하는 색</td>
+            <td align="center"><form method="get">
+     <input type="color" name="color" value="#0000ff"></form></td>
+        </tr>
+         <tr>         
+            <td>즐겨입는 옷</td>
+            <td><form method="get">
+     <select name"clothes" multiple>
+       <option value="츄리닝">츄리닝
+       <option value="반바지">반바지
+       <option value="스웨터">스웨터
+       <option value="검정 티">검정티
+     </select></form></td>
+        </tr>
+         <tr>          
+            <td>즐겨 읽는 책</td>
+            <td><form method="get"><input type="text" list="book" name="book">
+       <datalist id="book">
+         <option value="주식 서적">
+         <option value="컴퓨터 서적">
+         <option value="아동 서적">
+         <option value="여행 서적">
+       </datalist></td>
+        </tr>
+         <tr>          
+            <td>하루 공부 시간(1~5시간)</td>
+            <td><form method="get">
+     1.0<input type="number" min="1.0" max="5.0" step="1" name="time" value="1">5.0</form></td>
+        </tr>
+         <tr>          
+            <td>수면 시간(5~9시간)</td>
+            <td><form method="get">5.0<input type="range" min="5.0" max="9.0" name="sleep" list="sleep" value="6">9.0
+       <datalist id="sleep">
+          <option value="6">
+          <option value="7">
+          <option value="7.5">
+          <option value="8">
+          <option value="8.5">
+          <option value="9">
+       </datalist></form></td>
+        </tr>
+         <tr>          
+            <td>자주 보는 영상</td>
+            <td><video src="image/wildlife.mp4" controls loop width=200 hidght=150></video></td>
+        </tr>
+         <tr>          
+            <td>즐겨듣는 음악</td>
+            <td><audio src="image/kalimba.mp3" controls loop></audio></td>
+        </tr>
+    </tbody>
+     <tfoot align="center" height=20 >
+         <tr>
+            <th colspan=2 style="background-color:orange"><input type="submit" value="전송해주세요"></td>  
+        </tr>
+   </tfoot>
+    </table>
+  </body>
+</html>

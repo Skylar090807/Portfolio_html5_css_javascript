@@ -1,0 +1,27 @@
+<html lang="ko">
+ <head>
+   <meta charset="UTF-8">
+  <title>form-tag</title>
+ </head>
+ <body>
+   <h3>데이터 목록을 가진 텍스트 입력</h3>
+    <hr>
+    <form method="get">
+      나라:<input type="text" list="countries" name="country"><br>
+       <datalist id="countries">
+         <option value="가나">
+         <option value="스위스">
+         <option value="브라질">
+       </datalist><br>
+   <hr>
+      여행:<input type="text" list="trip" name="trip"><br>
+        <datalist id="trip">
+         <option value="인도">
+         <option value="러시아">
+         <option value="프랑스">
+         <option value="하와이">
+        </datalist><br><br><br>
+    <button type="submit">제출하기</button>
+    </form>
+ </body>
+</html>

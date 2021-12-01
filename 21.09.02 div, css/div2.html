@@ -1,0 +1,71 @@
+<!--html 주석처리 -->
+<html lang="ko">
+ <head>
+   <meta charset="UTF-8">
+  <title>p(div) 태그</title>
+  <style type="text/css">
+       .p1{
+            border-style:dotted;
+            border-width:3px;
+            border-color:blue;
+            }   
+       .p2{
+           border-top-style:dotted; /* left right top bottom*/
+           border-top-width:3px;
+           border-top-color:blue;
+            }   
+       .p3{
+           border:3px dashed blue;
+            }   
+         
+      .d1{
+          border-style:solid;
+          border-width:5px;
+          border-color:red;
+          }
+      .d2{
+          border-top-style:solid; /*left right top bottom*/
+          border-left-style:solid;
+          border-top-width:3px;
+          border-left-width:3px;
+          border-top-color:red;
+          border-left-color:magenta;
+          }
+      .d3{
+  
+          }
+      .m1{
+           border:1px solid orange;
+           margin:100px;  /*left right top bottom*/
+           margin-left:30px;
+           }
+
+      span{
+             background:skyblue;
+            }
+   
+      .k1{
+           border:1px solid black;
+           padding:30px;  /*left right top bottom*/
+           padding-top:100px;
+          {
+         
+  </style>
+ </head>
+ <body>
+   <h3>p(div) 태그의 박스 테두리(border)</h3>
+    <hr>
+     <p class="p1">P 박스 모델</p>
+     <p class="p2">P 박스 모델</p>
+     <p class="p3">P 박스 모델</p>
+  <hr>
+    <div class="d1">div 박스 모델</div><br>
+    <div class="d2">div 박스 모델</div><br>
+    <div class="d3">div 박스 모델</div><br>
+  <hr>
+     <div class="m1">margin</div>
+  <hr>
+     <div class="k1"><span>padding</span></div>
+     
+ </body>
+</html>

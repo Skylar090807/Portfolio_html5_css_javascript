@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        function k1(){
+            var x;  //지역변수
+            x=10;
+            y=20;   //전역변수(함수 안에서 var 선언 안 하면 전역변수)
+            document.write("지역변수 x="+x+"<br>");
+            document.write("전역변수 y="+y+"<br>");
+            document.write("전역변수 x="+this.x+"<br>");
+        }
+
+    </script>
+</head>
+<body>
+    <h3>지역변수 전역변수</h3>
+    <hr>
+    <script>
+        var x=100;//전역변수
+        k1();
+        document.write("<hr>");
+        document.write("x="+x+"<br>");
+        document.write("y="+y+"<br>");
+        document.write("<hr>");
+
+
+    </script>
+    
+</body>
+</html>

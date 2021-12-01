@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        function k1(){
+            //var 변수
+            var a,b,sum;
+            a=100;
+            b=500;
+            sum=a+b;
+            document.write("sum="+sum+"<br>");
+        }
+
+        function k2(x,y,z){
+            var total;
+            total=x+y+z;
+            document.write("x+y+z="+total+"<br>");
+            
+        }
+
+        function k3(){
+            var n1,n2,n3;
+            n1=120;
+            n2=90;
+            n3=n1-n2;
+            return n3; 
+        }
+
+        function k4(a1,b1,c1){
+            var result; 
+            result=a1-b1-c1;
+            return result;
+
+        }
+
+        function k5(){
+            var inp;
+            inp=prompt("수식을 입력하세요.","30*2+50");//숫자를 문자로 인식
+            num=eval(inp);//eval은 문자를 수식으로 바꾸는 내장함수
+            document.write("num="+num+"<br>");
+        }
+
+        function k6(){
+            var a,b,a1,b1,res;
+            a="100";//""안의 숫자는 문자
+            b="123.45"
+            a1=parseInt(a);//문자를 정수로 인식 내장함수
+            b1=parseFloat(b);//문자를 실수로 인식 내장함수
+            res=a1+b1;
+            document.write(a1+"+"+b1+"="+res+"<br>");
+            a="apple";
+            a1=isNaN(a);//숫자인지 아닌지 묻는 내장함수
+            document.write(a1);
+        }
+    </script>
+</head>
+<body>
+    <h3>함수(function)-4가지</h3>
+    <script>
+        var s;
+        k1();//1번째 방법
+        k2(20,70,-90);//2번째 방법
+        s=k3();//3번째 방법
+        document.write("s="+s+"<br>");
+        s=k4(5,9,10);//4번째 방법
+        document.write("5-9-10="+s+"<br>")
+        k5();
+        k6();
+    </script>
+    
+</body>
+</html>

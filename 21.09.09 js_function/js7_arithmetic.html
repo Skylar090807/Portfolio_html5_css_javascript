@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h3>증감 연산자(+1 -1)</h3>
+    <hr>
+    <script>
+        var x,ans;
+        x=10;
+        ans=x++; //++은 1증가
+        document.write("x="+x+", ans="+ans+"<br>");
+        ans=++x;
+        document.write("x="+x+", ans="+ans+"<br>");
+        ans=x--; //--는 1감소
+        document.write("x="+x+", ans="+ans+"<br>");
+        ans=--x;
+        document.write("x="+x+", ans="+ans+"<br>");
+
+
+    </script>
+
+    <h3>산술 연산자(+ = * / %)</h3>
+    <hr>
+    <script>
+    var total,div,mod,x=32;
+    total=100+x*2/4-3;
+    div=x/10; //division 나누기 실수 값으로 나옴
+    mod=x%2; //x를 정수 나누기 2 하고 나머지 값(2의 나머지 0짝수,1홀수)
+    document.write("x="+x+"<br><br>");
+    document.write("100+x*2/4-3="+total+"<br>");
+    document.write("x/10="+div+"<br>");
+    document.write("x%2="+mod+"<br>");
+    </script>
+    
+    <h3>복합 연산자(+= -= *= /= %=)</h3>
+    <hr>
+    <script>
+        var n1,n2;
+        n1=100;
+        n1+=200; //n1=n1+200
+        document.write("n1="+n1+"<br>");
+        n2=3;
+        n2*=6; //n2=n2*6
+        document.write("n2="+n2+"<br>");
+        var n3=100;
+        n3++;
+        ++n3;
+        document.write("n3="+n3+"<br>");
+
+
+
+
+    </script>
+    
+</body>
+</html>

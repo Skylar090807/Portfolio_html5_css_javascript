@@ -1,0 +1,36 @@
+<!--html 주석처리 -->
+<html lang="ko">
+ <head>
+   <meta charset="UTF-8">
+  <title>전체 셀렉터와 속성 셀렉터</title>
+  <style type="text/css">
+      /*<link href="mystyle.css" type="text/css" rel="stylesheet">
+      @import url(css4.css);*/
+      
+      *{color:green;}
+      input[type=text]{background-color:orange;}
+      input[type=tel]{background-color:pink;}
+      .k1{background-color:skyblue;}
+      button[type=submit]{background-color:pink;}
+  </style>
+ </head>
+ 
+<body>
+  <h3>form-tag</h3>
+
+  <hr>
+
+  <form method="get">
+    이름:<input type="text" value="honggildong" name="na"><br><br>
+    암호:<input type="password" value="123456" name="pass" class="k1"><br><br>
+    연락처:<input type="tel" value="010-1234-5678" name="tel"><br><br>
+   <hr>
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="submit">전송하세요</button>
+
+  </form>
+
+</body>
+
+
+
+</html>

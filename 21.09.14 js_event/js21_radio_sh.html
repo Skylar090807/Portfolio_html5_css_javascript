@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script>
+            function find(){
+                var chk=null;
+                var x=document.getElementsByName("city");
+                for(i=0; i<x.length; i++){
+                    if(x[i],checked==true){
+                        chk=x[i];
+                    }
+                }
+                if(chk!==null){
+                    alert(chk.value+"이 선택되었습니다.");
+
+                }
+                else{
+                    alert("선택된 항목이 없습니다.");
+
+                }
+            }
+            
+            
+            
+            
+    
+
+        </script>
+    </head>
+    <body >
+        <h3>버튼을 클릭하면 선택된 라디오 버튼의 value를 출력합니다.</h3>
+        <hr>
+        <form>
+            <input type="radio" name="city" value="seoul">서울
+            <input type="radio" name="city" value="busan">부산
+            <input type="radio" name="city" value="jeju">제주
+            <input type="radio" name="city" value="gangleung">강릉
+            <input type="radio" name="city" value="sokcho">속초
+            <input type="radio" name="city" value="chunchen">춘천&nbsp;&nbsp;&nbsp;
+            <input type="button" value="버튼 찾기" onclick="find()">
+        </form>
+        
+            
+
+      
+        
+        
+        
+        
+    </body>
+    </html>

@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>html-복습하기</title>
+    </head>
+    <body>
+        <h3>나의 일상</h3>
+        <hr>
+        <form method="get">
+            <table border="1" align="center" width=500>
+               <caption><b style="color:red">나의 일상</b></caption>
+               <thead align="center" style="background-color:orange" height=50>             
+                <tr>
+                    <th width=200>제목</th>
+                    <th >내용</th>
+                </tr>
+               </thead>
+           <tbody align=center height=600>
+                <tr>
+                    <td>좋아하는 색</td>
+                    <td><p><input type="color" name="color" value="#0000ff"></p></td>
+                </tr>
+                <tr>
+                    <td>즐겨 입는 옷</td>
+                    <td>
+                        <select multiple name="clothes">
+                            <option>츄리닝</option>
+                            <option>반바지</option>
+                            <option>쉐터</option>
+                            <option>검정 티</option>                         
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>즐겨 읽는 책</td>
+                    <td>
+                        <input type="text" list="book" name="book">
+                        <datalist id="book">
+                            <option>주식 서적</option>
+                            <option>컴퓨터 서적</option>
+                            <option>아동 서적</option>
+                            <option>여행 서적</option>
+                        </datalist>
+                    </td>
+                </tr> 
+                <tr>
+                    <td> 하루 공부 시간(1-5시간) </td>
+                    <td>
+                        1.0<input type="number" name="study" min=1.0 max=5.0 step=0.5 value="1">5.0
+                    </td>
+                </tr>
+                <tr>
+                    <td>수면 시간(5~9시간)</td>
+                    <td>
+                        5.0<input type="range" min="5" max="8" list="sleep" value=6 step=0.5 name="sleep">9.0
+                        <datalist id="sleep">
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="7.5"></option>
+                            <option value="8"></option>   
+                            <option value="8.5"></option>
+                            <option value="9"></option>      
+                        </datalist>
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>자주 보는 영상</td>
+                    <td>
+                        <video src="image/Wildlife.mp4" controls width=200 height=150></video>
+                    </td>
+                </tr>
+                <tr>
+                        <td>즐겨듣는 음악</td>
+                        <td>
+                            <audio src="image/kalimba.mp3" controls></audio>
+                        </td>
+                 </tr>           
+            </tbody>
+            <tfoot align=center height=50 style="background-color:orange">
+                <tr>
+                   <td colspan=2><input type="submit" value="전송해주세요" </td>
+                </tr>
+            </tfoot>
+            </table>  
+               
+        </form>       
+    </body>
+</html>
+

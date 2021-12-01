@@ -1,0 +1,99 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+        <script>
+            function k1(){
+                document.write("<h3>비교연산자- > >= < <= == != 의 결과는 true false</h3>");
+                var age,result;
+                age=25;
+                result=(age>=20);
+                document.write("result="+result+"<br>");
+                var x,y;
+                x=13;
+                y=7;
+                document.write("x="+x+"  ,y="+y+"<br>");
+                document.write("x==y: "+(x==y)+"<br>");
+                document.write("x!=y :"+(x!=y)+"<br>");
+                document.write("x>=y :"+(x>=y)+"<br>");
+                document.write("x<=y :"+(x<=y)+"<br>");
+            }
+
+            function k2(){
+                document.write("<h3>논리 연산자- &&(and) ||(or) !(not) 결과는 true false</h3>");
+                var score,age,result;
+                score=90;
+                age=20;
+                result=(score>80)&&(age<25)&&(200==100);
+                document.write("result="+result+"<br>");
+                var x,y;
+                x=true,y=false;
+                document.write("x&&y :"+(x&&y)+"<br>");
+                document.write("x||y :"+(x||y)+"<br>");
+                document.write("!x :"+(!x)+"<br>");
+                document.write("(3>2)&&(3<4) :"+((3>2)&&(3<4))+"<br>");
+                document.write("(3==2) || (-1<0) :"+((3==2) || (-1<0))+"<br>");                
+            }
+
+            function k3(){
+                document.write("<h3>조건 연산</h3>");
+                var x,y,big;
+                x=5,y=3;
+                big=(x>y)? x : y ;
+                document.write("big="+big+"<br>");
+                var a,b;
+                a=3,b=5;
+                document.write("두수의 차이: "+((a>b)? (a-b):(b-a))+"<br>");
+            }
+
+            function k4(){
+                document.write("<h3>비트 연산자 - 결과는 숫자</h3>");//1bit는 2진수 한자리
+                document.write("<h3>연산자 - &(and) |(or) ~(not) ^(ex-or)</h3><br>");
+                var x,y,ans;
+                x=10,y=3;
+                ans=x & y;
+                document.write("x&y="+ans+"<br>");
+                ans=x | y;
+                document.write("x|y="+ans+"<br>");
+                ans=x ^ y;
+                document.write("x^y="+ans+"<br>");
+                ans= ~y;
+                document.write("~y="+ans+"<br>");
+                ans=~255;
+                document.write("~255="+ans+"<br>");
+            }
+
+            function k5(){
+                document.write("<h3>shift 연산 결과값은 숫자</h3>");
+                var x,y,ans;
+                x=8;
+                ans=(x<<2);
+                document.write("x<<1 ="+ans+"<br>")
+                    x=8;
+                    ans=(x>>2);
+                    document.write("x>>2 ="+ans+"<br>");    
+            }
+
+            function k6(){
+                document.write("<h3>문자열</h3>");
+                document.write("apple"+32+"<br>");
+                document.write((25+30)+"apple"+"<br>");
+            }
+
+        </script>
+    </head>
+    <body>
+        <script>
+            k1();
+            k2();
+            k3();
+            k4();
+            k5();
+            k6();
+
+        </script>
+    </body>
+    </html>
